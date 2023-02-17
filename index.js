@@ -24,13 +24,13 @@ TODO: Write Your answer here
 */
 //? Now just assign a new value to num2
 
-// num2
+// num2 = 
 
 console.log(num1 + num2)
 
 
 
-console.log(num1 + num2)
+
 
 
 //? Create a function that prints out "Hello World to the console"
@@ -39,8 +39,8 @@ function greeting(){
 
 }
 
-//? Create a function that takes two numbers as arguments and adds them
-//? together
+//? Create a function that takes two numbers as arguments and returns the sum
+//? of these two numbers
 
 function sum(num1, num2){
 return 
@@ -50,8 +50,8 @@ console.log(sum(num1, num2))
 
 
 //! Any variables delcared in a function is only available within that
-//! function. A Global variable is a variable that is available throughout
-//! the program including inside functions
+//! function (local variables). A Global variable is a variable that is
+//!  available throughout the program including inside functions
 
 //* num1 and num2 are declared outside any function so it is global 
 //* and could be accessed in any line of code AFTER the line where
@@ -67,8 +67,8 @@ let firstName = "Josh"
 
 //! Before moving forward, comment out line 60 or delete firstName from the
 //! console.log
-//? Create a function that accepts one argument of a name and prints out
-//* Hello, my name is Josh
+//? Create a function that accepts one argument of a name and returns a string:
+//* Hello, my name is Josh -- Josh being the name passed as a parameter in the example
 function hello(name){
 return 
 }
