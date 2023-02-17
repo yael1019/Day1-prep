@@ -34,10 +34,13 @@ console.log(num1 + num2)
 
 
 //? Create a function that prints out "Hello World to the console"
-
+//! Function stored in memory
 function greeting(){
 
 }
+
+//! Here we call that function
+greeting()
 
 //? Create a function that takes two numbers as arguments and returns the sum
 //? of these two numbers
@@ -65,7 +68,7 @@ let firstName = "Josh"
 
 */
 
-//! Before moving forward, comment out line 60 or delete firstName from the
+//! Before moving forward, comment out line 63 or delete firstName from the
 //! console.log
 //? Create a function that accepts one argument of a name and returns a string:
 //* Hello, my name is Josh -- Josh being the name passed as a parameter in the example
@@ -75,7 +78,7 @@ return
 console.log(hello())
 
 //! You can also create a function that logs an output to the console,
-//! just make sure to call the function like in line 82
+//! just make sure to call the function like in line 85
 function printHello(name){
     console.log(name)
 }
@@ -90,7 +93,7 @@ function myDog(){
 //! known as callback functions
 
 
-//! Uncomment line 94 
+//! Uncomment line 97 
 // console.log(dog)
 //TODO: What error do you get and why?
 /*
