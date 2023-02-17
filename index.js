@@ -71,7 +71,7 @@ let firstName = "Josh"
 //! Before moving forward, comment out line 63 or delete firstName from the
 //! console.log
 //? Create a function that accepts one argument of a name and returns a string:
-//* Hello, my name is Josh -- Josh being the name passed as a parameter in the example
+//* Hello, my name is Josh -- Josh being the name passed as a parameter in this example
 function hello(name){
 return 
 }
