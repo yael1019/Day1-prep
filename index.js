@@ -2,8 +2,8 @@
 //! Note: Variables can store all types of data and functions
 //! like strings, arrays, objects, HTML elements, etc.
 
-const num1 = 2
-let num2 = 3
+// const num1 = 
+// let num2 = 
 
 console.log(num1 + num2)
 
