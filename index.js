@@ -2,15 +2,15 @@
 //! Note: Variables can store all types of data and functions
 //! like strings, arrays, objects, HTML elements, etc.
 
-// const num1 = 
-// let num2 = 
+const num1 = 1;
+let num2 = 2;
 
 console.log(num1 + num2)
 
 //? try reassigning these variables to a new value
 
-// num1 = 
-// num2 =
+num1 = 3;
+num2 = 4;
 
 
 console.log(num1 + num2)
@@ -18,13 +18,13 @@ console.log(num1 + num2)
 //! Did it work? Explain why it did or did not.
 /*
 TODO: Write Your answer here
-
+No because we already declared num1 using the keyword const which does not allow us to reasign the value.
 
 
 */
 //? Now just assign a new value to num2
 
-// num2 = 
+num2 = 5;
 
 console.log(num1 + num2)
 
@@ -35,8 +35,8 @@ console.log(num1 + num2)
 
 //? Create a function that prints out "Hello World to the console"
 //! Function stored in memory
-function greeting(){
-
+function greeting() {
+    return `Hello World to the console`;
 }
 
 //! Here we call that function
@@ -45,8 +45,8 @@ greeting()
 //? Create a function that takes two numbers as arguments and returns the sum
 //? of these two numbers
 
-function sum(num1, num2){
-return 
+function sum(num1, num2) {
+    return num1 + num2;
 }
 
 console.log(sum(num1, num2))
@@ -60,11 +60,11 @@ console.log(sum(num1, num2))
 //* and could be accessed in any line of code AFTER the line where
 //* it was delcared and initialized
 console.log("num1 :", num1, "num2: ", num2)
-console.log("num1 :", num1, "num2: ", num2, "name: ", firstName)
+console.log("num1 :", num1, "num2: ", num2, "name: ")
 let firstName = "Josh"
 // TODO: What happens when we try to log firstName
 /* Write your answer here
-
+I get an error saying firstName is not defined
 
 */
 
@@ -72,20 +72,20 @@ let firstName = "Josh"
 //! console.log
 //? Create a function that accepts one argument of a name and returns a string:
 //* Hello, my name is Josh -- Josh being the name passed as a parameter in this example
-function hello(name){
-return 
+function hello(name) {
+    return `Hello, my name is ${name}`;
 }
-console.log(hello())
+console.log(hello('Josh'))
 
 //! You can also create a function that logs an output to the console,
 //! just make sure to call the function like in line 85
-function printHello(name){
+function printHello(name) {
     console.log(name)
 }
 printHello("lala")
 
 //* Now we'll declare and initialize a variable inside a function
-function myDog(){
+function myDog() {
     let dog = "Snoopy"
     printHello(dog)
 }
@@ -94,10 +94,10 @@ function myDog(){
 
 
 //! Uncomment line 97 
-// console.log(dog)
+console.log(dog)
 //TODO: What error do you get and why?
 /*
-
+I get an error dog is not defined, because it is not defined in the global scope, therefore it is not in global memory.
 
 */
 
@@ -105,11 +105,11 @@ function myDog(){
 //! A callback function is a function that takes in another function as an
 //! argument
 
-function displayMySum(sumFunc){
-console.log("The sum is:",sumFunc)
+function displayMySum(sumFunc) {
+    console.log("The sum is:", sumFunc)
 }
 
-displayMySum(sum(5,2))
+displayMySum(sum(5, 2))
 
 
 
@@ -133,11 +133,11 @@ const secondNumber = document.getElementsByName("secondNum")[0]
 //! Note: These input fields are ALWAYS considered as text in HTML even
 //! if it is a number, therefore we parse our input field into an integer
 //! in order to add
-function onSubmit(e){
-e.preventDefault()
-const answer = parseInt(firstNumber.value) + parseInt(secondNumber.value)
-console.log(answer)
-document.getElementById("answer").innerText = answer
+function onSubmit(e) {
+    e.preventDefault()
+    const answer = parseInt(firstNumber.value) + parseInt(secondNumber.value)
+    console.log(answer)
+    document.getElementById("answer").innerText = answer
 }
 
 //* Here we have an event listener on a form that is inside the HTML
@@ -153,8 +153,8 @@ numbersForm.addEventListener('submit', onSubmit)
 //? Now instead of getElementsByName try getting the element by its id
 
 /*
-const firstNumber = 
-const secondNumber = 
+const firstNumber = document.getElementById('firstNum');
+const secondNumber = document.getElementById('secondNum');
 
 function onSubmit(e){
 e.preventDefault()
